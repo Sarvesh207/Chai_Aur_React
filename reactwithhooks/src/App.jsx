@@ -5,9 +5,13 @@ import{ useState } from "react";
 function App() {
 
   const [counter ,setCounter] = useState(0)
+  console.log("counetr", counter)
 
   const handllIncrease = () => {
-    setCounter(counter + 1 );
+    setCounter(prev => prev + 1 );
+    setCounter(prev => prev + 1 );
+    setCounter(prev => prev + 1 );
+    setCounter(prev => prev + 1 );
   }
 
   const handleDecrease =  () => {
